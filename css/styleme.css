@@ -1,0 +1,34 @@
+body {
+    background-color: #f7f7f9;
+    font-family: verdana;
+}
+
+h1 {
+   color: #6f5499;
+}
+
+h2 {
+    color: #0269c2;
+}
+
+a:link { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+span {
+    padding-right: 5pt;
+    float: left;
+    line-height: 85%;
+    width: .7em;
+    font-size: 400%;
+    font-family: verdana; 
+}
+
+dd {
+    color: #6f5499;
+}
+
+dt {
+    color: #0269c2;
+    font-weight: bolder;
+}
