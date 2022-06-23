@@ -1,0 +1,12 @@
+body {
+    background-color: #f7f7f9;
+    font-family: verdana;
+}
+
+h1 {
+   color: #6f5499;
+}
+
+a:link { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
