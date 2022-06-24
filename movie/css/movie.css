@@ -1,0 +1,108 @@
+body {
+    background-image: url("../images/background.png");
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-image: url("../images/bannerbg.png");
+    text-align: center;
+}
+
+#heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 3px 3px #999999;
+    text-align: center;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    border: 4px gray solid;
+    border-radius: 20px;
+    overflow: auto;
+}
+
+.left {
+    width: 550px;
+    float: left;
+}
+
+.right {   
+    width: 250px;
+    float: right;
+    background-color: #A2B964;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reviews {   
+    column-count: 2;
+    column-gap: 2%;
+    padding: 2%;
+}
+
+#rating {
+    background-image: url("../images/rbg.png");
+    font-size: 48px;
+    font-weight: bold;
+    color: red;
+    height: 83px;
+}
+
+#percent {
+    height: 83px;
+    vertical-align: super;
+}
+
+#quote {
+    background-color: #E8DC9B;
+    font-size: 8px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px gray solid;
+    padding: 8px;
+    margin-top: 0;
+    text-align: justify;
+    overflow: auto;
+}
+
+.reviews img {
+    margin: 0 5px 0 0;
+    float: left;
+}
+
+#reviewer {
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.right dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.right dl {
+    padding: 0 10px 10px 10px;
+}
+
+.right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination {
+    float: left;
+    width: 800px;
+    text-align: center;
+    background-color: #A2B964;
+}
+
+.validate {
+    text-align: right;
+    float: left;
+    width: 100%;
+}
