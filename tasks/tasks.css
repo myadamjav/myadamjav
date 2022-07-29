@@ -1,0 +1,51 @@
+header {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    width: 960px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+form label {
+    padding-right: 10px;
+}
+
+nav a {
+    background-color: #008CBA; /* Green */
+    border: none;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: #008CBA 1px solid;
+}
+
+thead {
+    background-color: #008CBA;
+}
+
+td {
+    font-style: italic;
+}
+
+.not {
+    display: none;
+}
+
+.rowHighlight { 
+    font-weight:bold;
+}
