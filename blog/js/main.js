@@ -1,6 +1,6 @@
 $(function(){
     $('body').on('click', "#search", function() {
-        let url = "http://jsonplaceholder.typicode.com/users?id=" + $("#userId").val();
+        let url = "https://jsonplaceholder.typicode.com/users?id=" + $("#userId").val();
         $.get(url, {"dataType": "json"})
             .done(successUser)
             .fail(error);
@@ -9,7 +9,7 @@ $(function(){
     $('body').on('click', '#comment', function() {
         $(this).hide();
         let id = $(this).attr("post");
-        let url = "http://jsonplaceholder.typicode.com/comments?postId=" + $(this).attr("post");
+        let url = "https://jsonplaceholder.typicode.com/comments?postId=" + $(this).attr("post");
         $.get(url)
             .done(function(data) {
                 successComments(data, id, this);
@@ -19,7 +19,7 @@ $(function(){
 })
 
 function successUser(data) {
-    let url = "http://jsonplaceholder.typicode.com/posts?userId=" + $("#userId").val();
+    let url = "https://jsonplaceholder.typicode.com/posts?userId=" + $("#userId").val();
     $("#name").html("Name: " + data[0].name);
     $("#email").html("Email: " + data[0].email);
     $("#address").html("Address: "+ data[0].address.street +", "+ data[0].address.suite +", "+ data[0].address.city +", "+ data[0].address.zipcode);
