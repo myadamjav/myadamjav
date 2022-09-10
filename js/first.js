@@ -116,3 +116,16 @@ const d = a.reduce(function(prevValue, elem, i, array){
   return prevValue * elem;
 });
 console.log(d);
+
+function init1() {
+    let l = "A";
+    function init2() {
+        var l = "B";
+        console.log("B: " + l);
+    }
+    init2();
+    console.log("A: " + l);
+    
+}
+init1();
+console.log("C: " + l);

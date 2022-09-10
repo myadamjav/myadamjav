@@ -40,6 +40,7 @@ teacher.teach("Web Application Programming");
 
 const p = Object.create({}, { name: { value: "Paul" } });
 console.log(p.name);
+console.log(p.hasOwnProperty("name"));
 
 const t = Object.create(p, {
     teach: {
@@ -48,6 +49,8 @@ const t = Object.create(p, {
         }
     }       
 })
+
+console.log(t.hasOwnProperty("name"));
 
 console.log(t.teach("Algorithms"));
 
@@ -133,6 +136,7 @@ function Student2(name, age, major) {
 }
 
 let s2 = new Student2("Anna", "21", "Computer Science");
+
 s2.greeting();
 s2.salute();
 
@@ -174,12 +178,12 @@ let s3 = {
     greeting() {
         console.log("Hey, my name is " + this.name + 
         " and I am studying " + this.major + ".");
-    },
-    __proto__: p3
+    }
 }
 
 s3.greeting();
 s3.salute();
+console.error(s3.hasOwnProperty("name"));
 
 let pr3 = {
     name: "Chris",

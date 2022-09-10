@@ -2,8 +2,8 @@ var WIDTH;
 var AMOUNT;
 var RATE;
 var INTERVAL;
-$(document).ready(function() {
-    $("#start").click(function() {
+$(function() {
+    $("#start").on("click", function() {
         reset();
         let count = parseInt($("input[name=count]").val());
         WIDTH = parseInt($("input[name=width]").val());

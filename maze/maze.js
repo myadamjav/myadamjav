@@ -1,7 +1,7 @@
-$(document).ready(function() {
-    var win = true;
-    var end = false;
-    var instruction = "Click the \"S\" to begin.";
+$(function() {
+    let win = true;
+    let end = false;
+    let instruction = "Click the \"S\" to begin.";
     $(".boundary").each(function () {
         $(this).mouseenter(function(){
             if(end == false) {
